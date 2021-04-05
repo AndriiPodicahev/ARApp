@@ -1,0 +1,12 @@
+newmtl backSG
+illum 4
+Kd 0.16 0.10 0.11
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl baseSG
+illum 4
+Kd 0.97 0.97 0.97
+Ka 0.71 0.71 0.71
+Tf 1.00 1.00 1.00
+Ni 1.00

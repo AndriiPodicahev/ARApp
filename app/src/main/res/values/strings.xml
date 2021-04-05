@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ARApp</string>
+    <string name="deleteAlertTitle">Видалення</string>
+    <string name="deleteAlertMessage">Ви бажаєте видалити цей об’єкт?</string>
+    <string name="deleteAlertOk">Видалити</string>
+    <string name="deleteAlertCancel">Залишити</string>
+</resources>

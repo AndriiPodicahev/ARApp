@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.grotstek.arapp"
+        minSdkVersion 27
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+
+sceneform.asset('sampledata/models/chair/CHAHIN_WOODEN_CHAIR.obj',
+        'default',
+        'sampledata/models/chair/CHAHIN_WOODEN_CHAIR.sfa',
+        'src/main/assets/CHAHIN_WOODEN_CHAIR')
+
+sceneform.asset('sampledata/models/chair2/10216_Bean_Bag_Chair_v2_max2008_it2.obj',
+        'default',
+        'sampledata/models/chair2/10216_Bean_Bag_Chair_v2_max2008_it2.sfa',
+        'src/main/assets/10216_Bean_Bag_Chair_v2_max2008_it2')
+
+
+
+sceneform.asset('sampledata/models/chairs/chair1/Arm_modern_chair_1_corona.obj',
+        'default',
+        'sampledata/models/chairs/chair1/Arm_modern_chair_1_corona.sfa',
+        'src/main/assets/chairs/Arm_modern_chair_1_corona')
+
+sceneform.asset('sampledata/models/chairs/chair2/vitraeames_armch.obj',
+        'default',
+        'sampledata/models/chairs/chair2/vitraeames_armch.sfa',
+        'src/main/assets/chairs/vitraeames_armch')
+
+sceneform.asset('sampledata/models/chairs/chair3/Chair_Restaurant_Pudra__corona.obj',
+        'default',
+        'sampledata/models/chairs/chair3/Chair_Restaurant_Pudra__corona.sfa',
+        'src/main/assets/chairs/Chair_Restaurant_Pudra__corona')
+
+sceneform.asset('sampledata/models/chairs/chair5/folio.obj',
+        'default',
+        'sampledata/models/chairs/chair5/folio.sfa',
+        'src/main/assets/folio')
+
+sceneform.asset('sampledata/models/chairs/chair6/1.obj',
+        'default',
+        'sampledata/models/chairs/chair6/1.sfa',
+        'src/main/assets/1')
+
+
+
+sceneform.asset('sampledata/models/chairs/chair8/chair_new_J2.obj',
+        'default',
+        'sampledata/models/chairs/chair8/chair_new_J2.sfa',
+        'src/main/assets/chairs/chair_new_J2')
+
+sceneform.asset('sampledata/models/tables/table1/Table.obj',
+        'default',
+        'sampledata/models/tables/table1/Table.sfa',
+        'src/main/assets/tables/Table')
+
+
+sceneform.asset('sampledata/models/tables/table2/obj_mesa.obj',
+        'default',
+        'sampledata/models/tables/table2/obj_mesa.sfa',
+        'src/main/assets/tables/obj_mesa')

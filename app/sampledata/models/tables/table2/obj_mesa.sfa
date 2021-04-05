@@ -1,0 +1,49 @@
+{
+  materials: [
+    {
+      name: 'mesa',
+      parameters: [
+        {
+          baseColor: 'Mesa_texture',
+        },
+        {
+          baseColorTint: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/tables/table2/obj_mesa.obj',
+    name: 'obj_mesa',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/tables/table2\\Mesa_texture.png',
+      name: 'Mesa_texture',
+      pipeline_name: 'C:\\\\Users\\\\Daemo\\\\OneDrive\\\\Área de Trabalho\\\\projetos blender\\\\mesa\\\\textura\\\\Mesa_texture.png',
+    },
+  ],
+  version: '0.54:2',
+}

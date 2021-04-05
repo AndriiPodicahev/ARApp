@@ -1,0 +1,69 @@
+{
+  materials: [
+    {
+      name: 'wire_088144225',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.34510000000000002,
+            0.56469999999999998,
+            0.88239999999999996,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.242536,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'wire_225087143',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.88239999999999996,
+            0.3412,
+            0.56079999999999997,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.242536,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/chairs/chair3/Chair_Restaurant_Pudra__corona.obj',
+    name: 'Chair_Restaurant_Pudra__corona',
+    recenter: 'root',
+    scale: 0.0018370000000000001,
+  },
+  version: '0.54:2',
+}

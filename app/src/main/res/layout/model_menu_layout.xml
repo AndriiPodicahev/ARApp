@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:background="#eb0cb7">
+    -->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/modelMenuLayout"
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:background="#d5deeb"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/menuModelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            android:text="ModelName" />
+
+
+        <TextView
+            android:id="@+id/menuModelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/menuModelName"
+            android:layout_marginTop="10dp"
+            android:text="ModelDescription" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menuModelDeleteButton"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/menuModelDescription"
+            android:text="@string/deleteAlertOk"/>
+
+
+    </RelativeLayout>
+<!--</FrameLayout>-->

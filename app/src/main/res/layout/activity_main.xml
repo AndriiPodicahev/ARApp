@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainFrameLayout">
+
+    <fragment android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/arUxFragment">
+    </fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center|top"
+            android:background="@drawable/arrow_down"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/menuLayout"
+            android:visibility="visible">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/categoryMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:id="@+id/chairsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chair_icon" />
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:id="@+id/tablesButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_icon" />
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:id="@+id/cupboardsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cupboard_icon" />
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:id="@+id/lampsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lamp_icon" />
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:id="@+id/plantsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plant_icon" />
+
+                    <Button
+                        android:layout_margin="5dp"
+                        android:id="@+id/sofaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sofa_icon" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/chairsMenu"
+                        android:visibility="visible">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/tablesMenu"
+                        android:visibility="gone">
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

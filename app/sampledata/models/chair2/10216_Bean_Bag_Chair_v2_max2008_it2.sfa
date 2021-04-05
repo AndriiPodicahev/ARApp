@@ -1,0 +1,53 @@
+{
+  materials: [
+    {
+      name: 'mtl_10216_Bean_Bag_Chair_v1',
+      parameters: [
+        {
+          baseColor: '10216_Bean_Bag_Chair_v1_Diffuse',
+        },
+        {
+          baseColorTint: [
+            0.58819999999999995,
+            0.58819999999999995,
+            0.58819999999999995,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.53452200000000005,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/chair2/10216_Bean_Bag_Chair_v2_max2008_it2.obj',
+    name: '10216_Bean_Bag_Chair_v2_max2008_it2',
+    recenter: 'root',
+    scale: 0.014505000000000001,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/chair2\\10216_Bean_Bag_Chair_v1_Diffuse.jpg',
+      name: '10216_Bean_Bag_Chair_v1_Diffuse',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '10216_Bean_Bag_Chair_v1_Diffuse.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

@@ -1,0 +1,13 @@
+# Blender MTL File: 'mesa.blend'
+# Material Count: 1
+
+newmtl mesa
+Ns 636.415271
+Ka 0.063636 0.063636 0.063636
+Kd 0.800000 0.800000 0.800000
+Ks 0.204545 0.204545 0.204545
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\Daemo\\OneDrive\\Área de Trabalho\\projetos blender\\mesa\\textura\\Mesa_texture.png
